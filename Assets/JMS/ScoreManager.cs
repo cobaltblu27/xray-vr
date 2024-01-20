@@ -51,7 +51,7 @@ public class ScoreManager : MonoBehaviour
     {
         Debug.Log("good");
         goodUI.fontMaterial.SetColor("_FaceColor", Color.green);
-        StartCoroutine(FadeCoroutine(failUI));
+        StartCoroutine(FadeCoroutine(goodUI));
         //UITimer(goodUI);
         //if(게이지 off)
         //Startgaugeing
@@ -60,7 +60,7 @@ public class ScoreManager : MonoBehaviour
     {
         Debug.Log("perfect");
         perfectUI.fontMaterial.SetColor("_FaceColor", Color.blue);
-        StartCoroutine(FadeCoroutine(failUI));
+        StartCoroutine(FadeCoroutine(perfectUI));
         //UITimer(perfectUI);
         //if(게이지 off)
         //Startgaugeing
