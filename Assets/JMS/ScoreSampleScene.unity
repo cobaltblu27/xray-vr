@@ -192,10 +192,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Walls:
   - {fileID: 1451947446291325562, guid: be33014b60111435c8e2f1081f754c64, type: 3}
-  - {fileID: 1451947446291325562, guid: 897431721773d453899d5ee316871f2c, type: 3}
+  - {fileID: 1451947446291325562, guid: e7ea8be8ef9444ca3b5af846909fa41e, type: 3}
   - {fileID: 1451947446291325562, guid: be33014b60111435c8e2f1081f754c64, type: 3}
-  - {fileID: 1451947446291325562, guid: 897431721773d453899d5ee316871f2c, type: 3}
-  - {fileID: 1451947446291325562, guid: 897431721773d453899d5ee316871f2c, type: 3}
+  - {fileID: 1451947446291325562, guid: e7ea8be8ef9444ca3b5af846909fa41e, type: 3}
+  - {fileID: 1451947446291325562, guid: e7ea8be8ef9444ca3b5af846909fa41e, type: 3}
   spawnLocation: {fileID: 1892697412}
   beat: 2.5
 --- !u!1 &200628393
@@ -1773,6 +1773,30 @@ PrefabInstance:
     - target: {fileID: 2264618121602709696, guid: be33014b60111435c8e2f1081f754c64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5894864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Size.y
+      value: 2.0571282
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Size.z
+      value: 0.070755735
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0153387785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Center.y
+      value: 1.0727648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380530195542644210, guid: be33014b60111435c8e2f1081f754c64, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0049369866
       objectReference: {fileID: 0}
     - target: {fileID: 9084538665713750390, guid: be33014b60111435c8e2f1081f754c64, type: 3}
       propertyPath: m_Enabled
