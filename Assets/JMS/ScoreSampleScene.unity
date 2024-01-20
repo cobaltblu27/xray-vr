@@ -153,15 +153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051db269f2e814c338d85bd61c8674a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 1263905777}
-  leftHand: {fileID: 1939550384}
-  rightHand: {fileID: 200628393}
-  leftArm: {fileID: 1720729408}
-  rightArm: {fileID: 461239086}
-  scoreText: {fileID: 919730437}
-  perfectUI: {fileID: 932127555}
-  goodUI: {fileID: 1049468248}
-  failUI: {fileID: 2117830278}
+  head: {fileID: 0}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftArm: {fileID: 0}
+  rightArm: {fileID: 0}
+  scoreText: {fileID: 0}
+  perfectUI: {fileID: 0}
+  goodUI: {fileID: 0}
+  failUI: {fileID: 0}
   fadeTime: 1
 --- !u!4 &118180208
 Transform:
