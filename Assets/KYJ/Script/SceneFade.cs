@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class SceneFade : MonoBehaviour
 {
+    //[SerializeField] private GameObject fadePanel;
+
     public bool fadeOnStart = true;
     public float fadeDuration = 2;
     public Color fadeColor;
@@ -42,10 +45,8 @@ public class SceneFade : MonoBehaviour
             rend.material.SetColor("_Color", newColor);
 
             timer += Time.deltaTime;
-            yield return new WaitForSeconds(4);
-            SceneChanger.SceneChange();
+            yield return null;
         }
-
         Color newColor2 = fadeColor;
         newColor2.a = alphaOut;
         rend.material.SetColor("_Color", newColor2);

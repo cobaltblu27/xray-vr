@@ -2,28 +2,30 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Tutorials.Core.Editor;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private int lifeCount = 3;
-    
-    void Awake()
-    {
 
-    }
+    private bool check;
     void Update()
     {
-        StartCoroutine(Fail(4,lifeCount));
-    }
-    private IEnumerator Fail(float timer, int life)
-    {
-        while (lifeCount > 0)
+        if (Input.GetKey(KeyCode.V))
         {
-
-
-            yield return null;
+            Fail();
         }
-
+    }
+    public void Fail()
+    {
+        StartCoroutine(SceneChange());
+    }
+    private IEnumerator SceneChange()
+    {
+        while (true)
+        {
+            SceneChanger.SceneChange();
+        }
     }
 }
