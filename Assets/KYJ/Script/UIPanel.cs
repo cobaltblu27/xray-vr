@@ -12,9 +12,10 @@ public class UIPanel : MonoBehaviour
     private float statusValue;
 
     private bool success;
+    private bool check;
     void Update()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (check)
         {
             StatusCheck();
         }

@@ -6,16 +6,14 @@ using UnityEngine.UI;
 
 public class SceneFade : MonoBehaviour
 {
-    //[SerializeField] private GameObject fadePanel;
-
     public bool fadeOnStart = true;
     public float fadeDuration = 2;
     public Color fadeColor;
-    private Renderer rend;
+    private Image rend;
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = GetComponent<Image>();
         if (fadeOnStart)
             FadeIn();
     }
@@ -42,13 +40,12 @@ public class SceneFade : MonoBehaviour
         {
             Color newColor = fadeColor;
             newColor.a = Mathf.Lerp(alphaIn, alphaOut, timer / fadeDuration);
-            rend.material.SetColor("_Color", newColor);
-
+            rend.color = newColor;
             timer += Time.deltaTime;
             yield return null;
         }
         Color newColor2 = fadeColor;
         newColor2.a = alphaOut;
-        rend.material.SetColor("_Color", newColor2);
+        rend.color = newColor2;
     }
 }

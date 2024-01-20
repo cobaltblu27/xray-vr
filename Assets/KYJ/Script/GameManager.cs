@@ -1,22 +1,53 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Tutorials.Core.Editor;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class GameManager : MonoBehaviour
 {
-    private int lifeCount = 3;
+    [SerializeField] private SceneFade sceneFade;
+
+    public int lifeCount = 3;
+    public int score = 0;
 
     private bool check;
-    void Update()
+    private static GameManager _instance;
+    public static GameManager Instance
     {
-        if (Input.GetKey(KeyCode.V))
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<GameManager>(); 
+                DontDestroyOnLoad(_instance.gameObject);
+            }
+            return _instance;
+        }
+    }
+    void Awake()
+    {
+        if (_instance != null)
+        {
+            if (_instance != this)
+            {
+                Destroy(this);
+            }
+            return;
+        }
+        _instance = GetComponent<GameManager>(); 
+        DontDestroyOnLoad(gameObject);
+    }
+     void Update()
+     {
+        if (Input.GetKey(KeyCode.V)) lifeCount = 0;
+        if (lifeCount == 0)
         {
             Fail();
         }
-    }
+     }
     public void Fail()
     {
         StartCoroutine(SceneChange());
@@ -25,6 +56,9 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
+            sceneFade.FadeOut();
+
+            yield return new WaitForSeconds(3);
             SceneChanger.SceneChange();
         }
     }
