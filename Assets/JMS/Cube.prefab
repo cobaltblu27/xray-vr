@@ -726,6 +726,7 @@ MonoBehaviour:
   rightHand: {fileID: 0}
   leftArm: {fileID: 0}
   rightArm: {fileID: 0}
-  perfectScore: 0.1
-  failScore: 0.3
+  perfectScore: 0.4
+  failScore: 1
+  text: {fileID: 0}
   speed: 0

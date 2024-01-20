@@ -28,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject rightHand;
     public GameObject leftArm;
     public GameObject rightArm;
+    public TextMeshProUGUI scoreText;
 
     [SerializeField]
     private TextMeshProUGUI perfectUI;
