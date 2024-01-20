@@ -42,12 +42,19 @@ public class GameManager : MonoBehaviour
     }
      void Update()
      {
-        if (Input.GetKey(KeyCode.V)) lifeCount = 0;
+        if (score >= 4)
+        {
+
+        }
         if (lifeCount == 0)
         {
             Fail();
         }
      }
+    public void Success()
+    {
+        StartCoroutine(SceneInit());
+    }
     public void Fail()
     {
         StartCoroutine(SceneChange());
@@ -60,6 +67,16 @@ public class GameManager : MonoBehaviour
 
             yield return new WaitForSeconds(3);
             SceneChanger.SceneChange();
+        }
+    }
+    private IEnumerator SceneInit()
+    {
+        while (true)
+        {
+            sceneFade.FadeOut();
+
+            yield return new WaitForSeconds(3);
+            SceneChanger.SceneInit();
         }
     }
 }

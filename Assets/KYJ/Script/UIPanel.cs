@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UIPanel : MonoBehaviour
 {
+
     [SerializeField] private Slider statusBar;
     [SerializeField] private GameObject[] texts;
 
@@ -25,6 +26,7 @@ public class UIPanel : MonoBehaviour
          StartCoroutine(StatusCoroutine(2));
     }
 
+    //X-ray Scene, Tutorial
     public IEnumerator StatusCoroutine(float timer)
     {
         float stopTime = 2;

@@ -57,8 +57,8 @@ public class PoseChecker : MonoBehaviour
             maxDistance = (rightHand.transform.position - rightHandP.position).magnitude;
         if ((rightArm.transform.position - rightArmP.position).magnitude > maxDistance)
             maxDistance = (rightArm.transform.position - rightArmP.position).magnitude;
-        Debug.Log("maxDistance:" + maxDistance);
-        text.text = "score: " + maxDistance;
+        Debug.Log("maxDistance:" + GameManager.Instance.score);
+        text.text = "score: " + GameManager.Instance.score;
         if (maxDistance > failScore)
         ScoreManager.Instance.Failed();
         else if (maxDistance > perfectScore)

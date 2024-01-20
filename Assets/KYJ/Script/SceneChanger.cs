@@ -10,6 +10,8 @@ public class SceneChanger : MonoBehaviour
     }
     public static void SceneInit()
     {
+        GameManager.Instance.lifeCount = 3;
+        GameManager.Instance.score = 0;
         SceneManager.LoadScene(0);
     }
     public static void SceneChange()
