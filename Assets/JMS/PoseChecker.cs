@@ -38,12 +38,13 @@ public class PoseChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += -transform.forward * 0.05f;
+        transform.position += new Vector3(0,0,0.1f*speed);
     }
     private void OnTriggerEnter(Collider other)
     {
         //TODO put score in singlton
-        CheckPose();
+        if(other.transform.root.CompareTag("Player"))
+            CheckPose();
     }
     private void CheckPose()
     {
@@ -64,6 +65,8 @@ public class PoseChecker : MonoBehaviour
         ScoreManager.Instance.Good();
         else
         ScoreManager.Instance.Perfect();
+
+        Destroy(gameObject, 3f);
 
     }
 
