@@ -43,7 +43,7 @@ public class ScoreManager : MonoBehaviour
         Debug.Log("failed");
         failUI.fontMaterial.SetColor("_FaceColor", Color.red);
         StartCoroutine(FadeCoroutine(failUI));
-        //목숨 -1;
+        GameManager.Instance.lifeCount--;
         //게이지 끊기
     }
 
@@ -52,6 +52,8 @@ public class ScoreManager : MonoBehaviour
         Debug.Log("good");
         goodUI.fontMaterial.SetColor("_FaceColor", Color.green);
         StartCoroutine(FadeCoroutine(goodUI));
+        GameManager.Instance.score++;
+
         //UITimer(goodUI);
         //if(게이지 off)
         //Startgaugeing
@@ -61,6 +63,8 @@ public class ScoreManager : MonoBehaviour
         Debug.Log("perfect");
         perfectUI.fontMaterial.SetColor("_FaceColor", Color.blue);
         StartCoroutine(FadeCoroutine(perfectUI));
+        GameManager.Instance.score += 2;
+
         //UITimer(perfectUI);
         //if(게이지 off)
         //Startgaugeing
