@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Unity.Tutorials.Core.Editor;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,7 +43,7 @@ public class GameManager : MonoBehaviour
      {
         if (score >= 4)
         {
-
+            Success();
         }
         if (lifeCount == 0)
         {
@@ -53,17 +52,17 @@ public class GameManager : MonoBehaviour
      }
     public void Success()
     {
-        StartCoroutine(SceneInit());
+        StartCoroutine(SceneChange());
     }
     public void Fail()
     {
-        StartCoroutine(SceneChange());
+        StartCoroutine(SceneInit());
     }
     private IEnumerator SceneChange()
     {
         while (true)
         {
-            sceneFade.FadeOut();
+            sceneFade.FadeIn();
 
             yield return new WaitForSeconds(3);
             SceneChanger.SceneChange();
@@ -73,7 +72,7 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            sceneFade.FadeOut();
+            sceneFade.FadeIn();
 
             yield return new WaitForSeconds(3);
             SceneChanger.SceneInit();

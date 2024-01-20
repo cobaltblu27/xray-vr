@@ -4,43 +4,34 @@ using System.Runtime.InteropServices;
 using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class UIPanel : MonoBehaviour
 {
-
     [SerializeField] private Slider statusBar;
-    [SerializeField] private GameObject[] texts;
+    [SerializeField] private TextMeshProUGUI texts;
 
     private float statusValue;
 
-    private bool success;
-    private bool check;
+    public bool success;
     void Update()
     {
-        if (check)
-        {
-            StatusCheck();
-        }
-    }
-    public void StatusCheck()
-    {
-         StartCoroutine(StatusCoroutine(2));
+        if (success) StartCoroutine(StatusCoroutine(3));
     }
 
     //X-ray Scene, Tutorial
     public IEnumerator StatusCoroutine(float timer)
     {
-        float stopTime = 2;
-        while (success) 
+        float stopTime = 0;
+        while (stopTime <= 3) 
         {
-            stopTime -= Time.deltaTime;
+            stopTime += Time.deltaTime;
             statusValue = stopTime;
             statusBar.value = statusValue;
+            texts.text = "" + statusValue;
             Debug.Log(stopTime);
             yield return new WaitForSeconds(timer);
-            success = false;
         }
-        texts[0].SetActive(true);
-        statusValue = 2;
+        statusValue = 0;
         statusBar.value = statusValue;
     }
 }

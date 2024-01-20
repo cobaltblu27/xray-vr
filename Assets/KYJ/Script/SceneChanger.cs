@@ -4,9 +4,31 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
+    private static SceneChanger _instance;
+    public static SceneChanger Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<SceneChanger>();
+                DontDestroyOnLoad(_instance.gameObject);
+            }
+            return _instance;
+        }
+    }
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        if (_instance != null)
+        {
+            if (_instance != this)
+            {
+                Destroy(this);
+            }
+            return;
+        }
+        _instance = GetComponent<SceneChanger>();
+        DontDestroyOnLoad(gameObject);
     }
     public static void SceneInit()
     {
@@ -18,6 +40,6 @@ public class SceneChanger : MonoBehaviour
     {
         GameManager.Instance.lifeCount = 3;
         GameManager.Instance.score = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 }
