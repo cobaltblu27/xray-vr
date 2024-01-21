@@ -33,7 +33,7 @@ public class PuzzleManager : MonoBehaviour
             _puzzlePieceSolved[i] = false;
             var rigid = piece.GetComponent<Rigidbody>();
             rigid.constraints = RigidbodyConstraints.None;
-            TeleportObjectInsideCube(piece.transform);
+            // TeleportObjectInsideCube(piece.transform);
         }
 
         _puzzlePlaying = true;
@@ -73,8 +73,8 @@ public class PuzzleManager : MonoBehaviour
             if (Quaternion.Angle(piece.transform.rotation, _originalRotations[i]) < snapThresholdRotation &&
                 Vector3.Distance(piece.transform.position, _originalPositions[i]) < snapThresholdPosition)
             {
-                Destroy(piece.GetComponent<Rigidbody>());
                 Destroy(piece.GetComponent<XRGrabInteractable>());
+                Destroy(piece.GetComponent<Rigidbody>());
                 piece.transform.rotation = _originalRotations[i];
                 piece.transform.position = _originalPositions[i];
                 _puzzlePieceSolved[i] = true;

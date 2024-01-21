@@ -54,9 +54,10 @@ public class RayPuzzleManager : MonoBehaviour
     {
         Puzzle.gameObject.SetActive(false);
         PoseWall.SetActive(true);
+        StartCoroutine(WaitForPoseWall());
     }
 
-    IEnumerable WaitForPoseWall()
+    IEnumerator WaitForPoseWall()
     {
         yield return new WaitForSeconds(7);
         ToXrayScene();
