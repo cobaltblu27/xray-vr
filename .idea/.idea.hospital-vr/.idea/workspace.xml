@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048f8335-1b67-4290-84c0-a4e1dd0c83ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hospital-vr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hospital-vr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RayPuzzleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RayPuzzleManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBox.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBox.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBox.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBox.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBoxOff.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Animation/TextBoxOff.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMS/ScoreSampleScene 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/ScoreSampleScene 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMS/Skybox/RayAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/Skybox/RayAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMS/SubtitleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/SubtitleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/TextAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/TextAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/UIPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/UIPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/XrayCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/XrayCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Sound.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Animation.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/X_rayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/X_rayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Maplestory Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Maplestory Bold SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
