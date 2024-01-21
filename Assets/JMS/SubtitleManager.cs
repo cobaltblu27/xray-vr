@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class SubtitleManager : MonoBehaviour
 {
-    [SerializeField]
-    string[] subtitles;
-    [SerializeField]
-    float[] timers;
+    [SerializeField] string[] subtitles;
+    [SerializeField] float[] timers;
     public GameObject canvas;
     [SerializeField]
     TextMeshProUGUI subtitle;
     [SerializeField]
     private float typingSpeed = 0.04f;
     public Animator animator;
+
+    [SerializeField] private UnityEvent onEnd;
     private Coroutine SubtitleSwitchCoroutine;
     private void Start()
     {
         StartSub();
     }
+
     public void StartSub()
     {
         //canvas.SetActive(true);
@@ -39,12 +41,12 @@ public class SubtitleManager : MonoBehaviour
                 subtitle.text = subtitles[i].Substring(0,j+1);
                 yield return new WaitForSeconds(typingSpeed);
             }
+
             yield return new WaitForSeconds(3f);
         }
         //animator.Play("Talk");
         animator.SetBool("Talk", false);
+        onEnd.Invoke();
         yield return null;
     }
-
-
 }
