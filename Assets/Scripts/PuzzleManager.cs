@@ -31,8 +31,8 @@ public class PuzzleManager : MonoBehaviour
             _originalPositions[i] = piece.transform.position;
             _originalRotations[i] = piece.transform.rotation;
             _puzzlePieceSolved[i] = false;
-            var rigid = piece.GetComponent<Rigidbody>();
-            rigid.constraints = RigidbodyConstraints.None;
+            //var rigid = piece.GetComponent<Rigidbody>();
+            //rigid.constraints = RigidbodyConstraints.None;
             // TeleportObjectInsideCube(piece.transform);
         }
 
@@ -47,7 +47,7 @@ public class PuzzleManager : MonoBehaviour
         {
             var piece = pieces[i];
             var rigid = piece.GetComponent<Rigidbody>();
-            rigid.constraints = RigidbodyConstraints.FreezeAll;
+            //rigid.constraints = RigidbodyConstraints.FreezeAll;
             piece.transform.rotation = _originalRotations[i];
             piece.transform.position = _originalPositions[i];
             _puzzlePieceSolved[i] = true;

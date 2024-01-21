@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             sceneFade.FadeOut();
 
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
     private IEnumerator SceneInit()
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
             sceneFade.FadeOut();
 
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
