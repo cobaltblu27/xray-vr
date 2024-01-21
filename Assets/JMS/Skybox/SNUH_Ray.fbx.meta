@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d8ae542f75fd469fa98be9cf02ca1f9
+guid: 9053af18375d44082809dc198e76e757
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -37,7 +37,7 @@ ModelImporter:
       takeName: Armature.002|Excitement
       internalID: -7294562470187200523
       firstFrame: 0
-      lastFrame: 183
+      lastFrame: 166
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -66,7 +66,7 @@ ModelImporter:
       takeName: Armature.002|Talk
       internalID: -6705285463154883276
       firstFrame: 0
-      lastFrame: 109
+      lastFrame: 99
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
