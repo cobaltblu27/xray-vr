@@ -14,8 +14,11 @@ public class SubtitleManager : MonoBehaviour
     TextMeshProUGUI subtitle;
     [SerializeField]
     private float typingSpeed = 0.04f;
+    public Animator animator;
     private void Start()
     {
+        animator.SetTrigger("Excite");
+        animator.SetBool("Talk", true);
         StartSub();
     }
     public void StartSub()
@@ -38,6 +41,7 @@ public class SubtitleManager : MonoBehaviour
             yield return new WaitForSeconds(3f);
             i++;
         }
+        animator.SetBool("Talk", false);
         yield return null;
     }
 
