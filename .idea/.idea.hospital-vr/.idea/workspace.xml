@@ -5,75 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048f8335-1b67-4290-84c0-a4e1dd0c83ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Prefabs/SNUH_Wall2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/SNUH_Wall2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/SNUH_Wall2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Skybox.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Skybox/RayAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Skybox/RayAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Skybox/SNUH_Ray.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JMS/Skybox/SNUH_Ray.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Prefab/SNUH_WallFull3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Prefab/UI Panel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/Script/TextAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 10.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 11.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 14.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 15.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 16.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 17.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 18.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 20.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 21.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Group 9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/SliderImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/SliderImage.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.hospital-vr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hospital-vr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/Cube 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/Cube 1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Prefab/SNUH_WallFull3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/Cube.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/Cube.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Prefab/UI Panel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/ScoreSampleScene 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/ScoreSampleScene 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMS/SubtitleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/SubtitleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/New Folder 2.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/New Folder 2/Fade.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Fade.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/New Folder 2/Fade.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/UI_Image/Fade.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Prefab/DontDestroy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Prefab/DontDestroy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/Prefabs/SNUH_Wall2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/DontDestroy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/DontDestroy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/SceneChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/SceneChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/SceneFade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/SceneFade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/UIPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/UIPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/WaitingRoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/WaitingRoom.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/TextAnimation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KYJ/Script/XrayCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KYJ/Script/XrayCheck.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RayPuzzleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RayPuzzleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Interaction Setup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Interaction Setup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/XR Origin (XR Rig).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/KYJ.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/KYJ.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/X_rayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/X_rayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PuzzleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PuzzleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SubtitleManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SubtitleManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMS/SubtitleManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Maplestory Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Maplestory Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
