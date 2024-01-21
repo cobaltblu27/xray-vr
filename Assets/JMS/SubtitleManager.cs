@@ -15,32 +15,31 @@ public class SubtitleManager : MonoBehaviour
     [SerializeField]
     private float typingSpeed = 0.04f;
     public Animator animator;
+    private Coroutine SubtitleSwitchCoroutine;
     private void Start()
     {
-        animator.SetTrigger("Excite");
-        animator.SetBool("Talk", true);
         StartSub();
     }
     public void StartSub()
     {
-            //canvas.SetActive(true);
-            StartCoroutine(SubtitleSwitch());
+        //canvas.SetActive(true);
+        if (SubtitleSwitchCoroutine != null)
+            StopCoroutine(SubtitleSwitch());
+        SubtitleSwitchCoroutine = StartCoroutine(SubtitleSwitch());
     }
 
     IEnumerator SubtitleSwitch()
     {
-        int i = 0;
-        while (i < subtitles.Length)
+        
+        for (int i =0; i < subtitles.Length; i++)
         {
             subtitle.text = "";
-            foreach (char letter in subtitles[i].ToCharArray())
-            {
-                subtitle.text += letter;
+            for(int j=0; j < subtitles[i].Length; j++)
+                subtitle.text = subtitles[i].Substring(0,j+1);
                 yield return new WaitForSeconds(typingSpeed);
-            }
             yield return new WaitForSeconds(3f);
-            i++;
         }
+        //animator.Play("Talk");
         animator.SetBool("Talk", false);
         yield return null;
     }
