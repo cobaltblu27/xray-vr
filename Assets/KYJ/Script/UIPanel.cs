@@ -5,33 +5,61 @@ using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using static System.Net.Mime.MediaTypeNames;
 public class UIPanel : MonoBehaviour
 {
     [SerializeField] private Slider statusBar;
-    [SerializeField] private TextMeshProUGUI texts;
+    [SerializeField] private TextMeshProUGUI clearTxt;
+    [SerializeField] private TextMeshProUGUI cheerTxt;
+    [SerializeField] private TextMeshProUGUI goodTxt;
 
     private float statusValue;
 
-    public bool success;
+    public bool stage;
+    public bool stay;
+    private void Start()
+    {
+        statusValue = Mathf.Clamp(0, 0, 5);
+        statusBar.maxValue = 5;
+        statusBar.minValue = 0;
+    }
     void Update()
     {
-        if (success) StartCoroutine(StatusCoroutine(3));
+        if (stage)
+        {
+            statusBar.enabled = true;
+            PoseCheck();
+        }
+        else
+        {
+            statusBar.enabled = false;
+            statusValue = 0;
+        }
     }
 
-    //X-ray Scene, Tutorial
-    public IEnumerator StatusCoroutine(float timer)
+    void PoseCheck()
     {
-        float stopTime = 0;
-        while (stopTime <= 3) 
+        if (!stay)
         {
-            stopTime += Time.deltaTime;
-            statusValue = stopTime;
-            statusBar.value = statusValue;
-            texts.text = "" + statusValue;
-            Debug.Log(stopTime);
-            yield return new WaitForSeconds(timer);
+            statusValue -= 1;
+            if (statusValue == 2.0f)
+            {
+                cheerTxt.alpha = 1.0f;
+            }
         }
-        statusValue = 0;
+        else
+        {
+            statusValue += Time.deltaTime;
+            if (statusValue == 2.5f)
+            {
+                goodTxt.alpha = 1.0f;
+            }
+        }
+        if (statusBar.value == 5)
+        {
+            clearTxt.alpha += Time.deltaTime;
+        }
         statusBar.value = statusValue;
     }
 }

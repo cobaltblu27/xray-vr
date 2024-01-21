@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SceneFade : MonoBehaviour
 {
+    [SerializeField] private GameObject fadeImage;
     public bool fadeOnStart = true;
     public float fadeDuration = 2;
     public Color fadeColor;
     private Image rend;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        rend = GetComponent<Image>();
+        rend = fadeImage.GetComponent<Image>();
+
         if (fadeOnStart)
             FadeIn();
     }
-
     public void FadeIn()
     {
         Fade(1, 0);

@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/JMS/ScoreSampleScene 1.unity
-    guid: f3ee6a185c5d847aa999d3bc790dff1b
+    path: Assets/Scenes/KYJ.unity
+    guid: a576a416d729cb24ea73eb6c2ef959c4
   - enabled: 1
     path: Assets/Scenes/X_rayScene.unity
     guid: c9591970503aead4cb2bc99bcb9b528e
