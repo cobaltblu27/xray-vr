@@ -65,6 +65,6 @@ public class RayPuzzleManager : MonoBehaviour
     
     public void ToXrayScene()
     {
-        SceneManager.LoadScene("X_rayScene");
+        SceneManager.LoadScene(1);
     }
 }

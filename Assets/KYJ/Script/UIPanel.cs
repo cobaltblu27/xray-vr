@@ -57,6 +57,7 @@ public class UIPanel : MonoBehaviour
         if (statusBar.value == 5)
         {
             clearTxt.alpha = 1;
+            goodTxt.alpha = 0;
             textBoxAnimator.SetBool("TextOn", true);
         }
     }
