@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class GameManager : MonoBehaviour
     public int lifeCount = 3;
     public int score = 0;
 
-    private bool check;
+    private bool clear;
+    private bool fail;
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -20,7 +22,7 @@ public class GameManager : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType<GameManager>(); 
-                DontDestroyOnLoad(_instance.gameObject);
+                //DontDestroyOnLoad(_instance.gameObject);
             }
             return _instance;
         }
@@ -36,7 +38,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         _instance = GetComponent<GameManager>(); 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
      void Update()
      {
@@ -52,29 +54,31 @@ public class GameManager : MonoBehaviour
     public void Success()
     {
         StartCoroutine(SceneChange());
+        clear = true;
     }
     public void Fail()
     {
         StartCoroutine(SceneInit());
+        fail = true;
     }
     private IEnumerator SceneChange()
     {
-        while (true)
+        while (clear)
         {
-            sceneFade.FadeIn();
+            sceneFade.FadeOut();
 
             yield return new WaitForSeconds(3);
-            SceneChanger.SceneChange();
+            SceneManager.LoadScene(1);
         }
     }
     private IEnumerator SceneInit()
     {
-        while (true)
+        while (fail)
         {
-            sceneFade.FadeIn();
+            sceneFade.FadeOut();
 
             yield return new WaitForSeconds(3);
-            SceneChanger.SceneInit();
+            SceneManager.LoadScene(0);
         }
     }
 }
