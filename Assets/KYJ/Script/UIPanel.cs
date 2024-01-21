@@ -30,13 +30,11 @@ public class UIPanel : MonoBehaviour
         if (stage)
         {
             textBoxAnimator.gameObject.SetActive(true);
-            statusBar.enabled = true;
             textBoxAnimator.SetBool("TextOn", true);
             PoseCheck();
         }
         else
         {
-            statusBar.enabled = false;
             textBoxAnimator.SetBool("TextOn", false);
         }
     }
@@ -47,20 +45,14 @@ public class UIPanel : MonoBehaviour
         if (!stay)
         {
             statusValue -= Time.deltaTime;
-            if (statusValue >= 1.0f && statusValue <= 2.9f)
-            {
-                cheerTxt.alpha = 1;
-                goodTxt.alpha = 0;
-            }
+            cheerTxt.alpha = 1;
+            goodTxt.alpha = 0;
         }
         else
         {
             statusValue += Time.deltaTime;
-            if (statusValue >= 3f && statusValue >= 4.9f)
-            {
-                goodTxt.alpha = 1;
-                cheerTxt.alpha = 0;
-            }
+            goodTxt.alpha = 1;
+            cheerTxt.alpha = 0;
         }
         if (statusBar.value == 5)
         {
