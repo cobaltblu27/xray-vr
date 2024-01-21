@@ -1,7 +1,6 @@
 ﻿using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Tutorials.Core.Editor;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
