@@ -36,8 +36,14 @@ public class PuzzleManager : MonoBehaviour
             // TeleportObjectInsideCube(piece.transform);
         }
 
-        _puzzlePlaying = true;
+        StartCoroutine(SetPuzzlePlaying());
         Debug.Log(_originalRotations[6]);
+    }
+
+    IEnumerator SetPuzzlePlaying()
+    {
+        yield return new WaitForSeconds(2);
+        _puzzlePlaying = true;
     }
 
     // for debugging purposes
