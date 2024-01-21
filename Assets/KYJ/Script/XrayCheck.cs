@@ -35,18 +35,16 @@ public class XrayCheck : MonoBehaviour
     {
         panel.stage = true;
     }
-    private void Update()
-    {
-        Debug.Log(panel.stay);
-        Debug.Log(panel.stage);
-        
-    }
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
         //TODO put score in singlton
         if (other.transform.root.CompareTag("Player"))
             CheckPose();
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        panel.stage = false;
     }
     private void CheckPose()
     {
