@@ -34,14 +34,17 @@ public class SubtitleManager : MonoBehaviour
         for (int i =0; i < subtitles.Length; i++)
         {
             subtitle.text = "";
-            for(int j=0; j < subtitles[i].Length; j++)
+            for (int j = 0; j < subtitles[i].Length; j++)
+            {
                 subtitle.text = subtitles[i].Substring(0,j+1);
                 yield return new WaitForSeconds(typingSpeed);
+            }
             yield return new WaitForSeconds(3f);
         }
         //animator.Play("Talk");
         animator.SetBool("Talk", false);
         yield return null;
     }
+
 
 }
